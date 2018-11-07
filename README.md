@@ -1,6 +1,19 @@
-## Como Fazer Full Stack Lab
+## Node Full Stack Lab
 
-**Iniciar Projeto**
+Full Stack Lab em NodeJS que simula o site wikiHow
+
+
+#Build
+
+` $ npm install
+`
+
+#Dev
+
+` $ nodemon index.js
+`
+
+#Dependencies
 
 ` $ npm init
 `
@@ -18,15 +31,4 @@
 `
 
 ` $ npm install -g nodemon
-`
-
-
-**Build**
-
-` $ npm install
-`
-
-**Dev**
-
-` $ nodemon index.js
 `
