@@ -12,3 +12,12 @@
 
 ` $ npm install
 `
+
+` $ npm install ejs
+`
+
+` $ npm install axios
+`
+
+` $ npm install body-parser
+`
