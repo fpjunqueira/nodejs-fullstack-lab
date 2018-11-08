@@ -1,19 +1,19 @@
-## Node Full Stack Lab
+# Node Full Stack Lab
 
-Fullstack lab with NodeJS and Google Firebase
+Full Stack Lab em NodeJS que simula o site wikiHow
 
 
-#Build
+## Build
 
 ` $ npm install
 `
 
-#Dev
+## Dev
 
 ` $ nodemon index.js
 `
 
-#Dependencies
+## Dependencies
 
 ` $ npm init
 `
