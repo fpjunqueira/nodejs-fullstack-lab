@@ -1,6 +1,6 @@
 ## Node Full Stack Lab
 
-Full Stack Lab em NodeJS que simula o site wikiHow
+Fullstack lab with NodeJS and Google Firebase
 
 
 #Build
