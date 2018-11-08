@@ -1,6 +1,7 @@
 <%- include('../header') %>
 
 <a class="btn btn-light" href="/categorias/nova">Nova Categoria</a><br/><br/>
+<a class="btn btn-light" href="/publicacoes/nova">Nova Publicação</a><br/><br/>
 
 <table class="table table-hover table-striped">
     <thead>
@@ -12,7 +13,9 @@
     <tbody>
     <% categorias.forEach(categoria => { %>
       <tr>
-        <td scope="row"><%= categoria.categoria %></td>
+        <td scope="row">
+            <a href="/publicacoes/categoria/<%= categoria.id %>"><%= categoria.categoria %></a>
+        </td>
         <td>
             <a href="/categorias/editar/<%= categoria.id %>">Editar</a>
             <a href="/categorias/excluir/<%= categoria.id %>">Excluir</a>
