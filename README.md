@@ -32,3 +32,7 @@ Full Stack Lab em NodeJS que simula o site wikiHow
 
 ` $ npm install -g nodemon
 `
+
+**Deploy**
+
+zeit.co
