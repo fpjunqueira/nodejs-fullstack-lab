@@ -1,8 +1,8 @@
 const axios = require('axios')
 const baseURL = 'https://como-fazer-devpleno-felipe.firebaseio.com/'
-
+const auth = 'BxhVrFsCEa87AG9ZM5o0NHUTEdRt7ojXxgAKExIb'
 const list = async (key) => {
-    const content = await axios.get(`${baseURL}${key}.json`)                     
+    const content = await axios.get(`${baseURL}${key}.json?auth=${auth}`)                     
     
     if (content.data) {
         const objetos = Object
@@ -19,7 +19,7 @@ const list = async (key) => {
 }
 
 const get = async (key, id) => {
-    const content = await axios.get(`${baseURL}${key}/${id}.json`)   
+    const content = await axios.get(`${baseURL}${key}/${id}.json?auth=${auth}`)   
     return {
         id: id,
         ...content.data
@@ -27,17 +27,17 @@ const get = async (key, id) => {
 }
 
 const apagar = async (key, id) => {
-    await axios.delete(`${baseURL}${key}/${id}.json`)
+    await axios.delete(`${baseURL}${key}/${id}.json?auth=${auth}`)
     return true
 }
 
 const update = async(key, id, data) => {
-    const content = await axios.put(`${baseURL}${key}/${id}.json`, data)    
+    const content = await axios.put(`${baseURL}${key}/${id}.json?auth=${auth}`, data)    
     return true
 }
 
 const create = async(key, data) => {
-    await axios.post(`${baseURL}${key}.json`, data)
+    await axios.post(`${baseURL}${key}.json?auth=${auth}`, data)
     return true
 }
 
