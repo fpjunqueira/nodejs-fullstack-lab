@@ -1,7 +1,1 @@
-{
-    "version": 2,
-    "name": "nodejs-fullstack-lab",
-    "builds": [
-        { "src": "*.js", "use": "@now/node" }
-    ]
-}
+{}
