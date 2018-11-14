@@ -35,4 +35,4 @@ Full Stack Lab em NodeJS que simula o site wikiHow
 
 **Deploy**
 
-zeit.co
+https://nodejs-fullstack-lab-dllohfiari.now.sh/
